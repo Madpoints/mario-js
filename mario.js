@@ -1,5 +1,5 @@
-
-printPyramid(5);
+var height = prompt("What height is the pyramid?")
+printPyramid(height);
 
 
 /*
