@@ -13,11 +13,19 @@ printPyramid(5);
  *       #####
  *      ######
  */
-function printPyramid(height) {
-    console.log("Uh oh... the pyramid is under construction.");
-    console.log("Check back soon, our developers are hard at work as we speak!");
+ function printPyramid(height) {
+     // console.log("Uh oh... the pyramid is under construction.");
+     // console.log("Check back soon, our developers are hard at work as we speak!");
+     pyramid = ""
+     for (var i = 0; i < height; i++){
+        for (var j = 0; j < height-i-1; j++){
+            pyramid = pyramid + " "
+        }
+         for (var k = 0; k < i+2; k++){
+             pyramid = pyramid + "#"
+         }
+         pyramid = pyramid + "\n"
 
-    // TODO
-    // print that pyramid!
-
-}
+     }
+     console.log(pyramid)
+ }
